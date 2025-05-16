@@ -50,7 +50,7 @@ PRODUCT_PACKAGES += \
     PixelTelecomOverlay \
     PixelTelephonyProviderOverlay \
     PixelTetheringOverlay2021 \
-    SettingsGoogleOverlayEvolutionX \
+    SettingsGoogleOverlayMist \
     SystemUIGXOverlay \
     WildlifeSettingsVpnOverlay2022 \
     WildlifeSysuiVpnOverlay2022
