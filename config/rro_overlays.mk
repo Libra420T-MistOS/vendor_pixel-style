@@ -36,7 +36,6 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlayCommon \
     PixelContactsProviderOverlay \
-    PixelDocumentsUIGoogleOverlay \
     PixelFlipendoOverlay \
     PixelFrameworkOverlay \
     PixelLauncherNoGestureHintOverlay \
