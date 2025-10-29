@@ -60,11 +60,8 @@ PRODUCT_PACKAGES += \
     CompanionDeviceManagerOverlay \
     DeviceDiagnosticsOverlay \
     FlipendoOverlay \
-    PixelDisplayService__husky__auto_generated_rro_product \
     PixelNfcOverlayCommon \
     SafetyRegulatoryInfoOverlay \
-    SettingsGoogleHuskyOverlay \
-    SettingsGoogleHuskyOverlayRRO \
     SettingsProviderOverlay \
     SimAppDialogOverlay \
     StorageManagerGoogleOverlay \
@@ -74,6 +71,23 @@ PRODUCT_PACKAGES += \
     TelephonyProviderOverlay \
     TraceurOverlay \
     TrafficLightFaceOverlay \
-    UdfpsOverlay \
-    SettingsGoogleHuskyOverlayVendorRRO
+    UdfpsOverlay
+
+# Husky Overlays
+ifneq (,$(filter husky,$(LINEAGE_BUILD)))
+PRODUCT_PACKAGES += \
+	PixelDisplayService__husky__auto_generated_rro_product \
+	SettingsGoogleHuskyOverlay \
+    SettingsGoogleHuskyOverlayRRO \
+	SettingsGoogleHuskyOverlayVendorRRO
+endif
+
+# Shiba Overlays
+ifneq (,$(filter shiba,$(LINEAGE_BUILD)))
+PRODUCT_PACKAGES += \
+	PixelDisplayService__shiba__auto_generated_rro_product \
+	SettingsGoogleShibaOverlay \
+    SettingsGoogleShibaOverlayRRO \
+    SettingsGoogleShibaOverlayVendorRRO
+endif
 
