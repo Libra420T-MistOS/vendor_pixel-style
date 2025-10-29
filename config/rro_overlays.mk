@@ -17,9 +17,11 @@
 # Google Overlays
 PRODUCT_PACKAGES += \
     AvatarPickerPixelOverlay \
+    ClearCallingOverlay \
     CellBroadcastReceiverOverlay \
     CellBroadcastServiceOverlay \
     DMServiceOverlay \
+    DreamlinerOverlay \
     GoogleConfigOverlay \
     GoogleDeviceLockControllerOverlay \
     GoogleDialerConfOverlay \
@@ -53,12 +55,25 @@ PRODUCT_PACKAGES += \
     WildlifeSettingsVpnOverlay2022 \
     WildlifeSysuiVpnOverlay2022
 
-ifneq ($(filter panther cheetah lynx felix shiba husky akita tokay caiman komodo tegu frankel blazer mustang, $(LINEAGE_BUILD)),)
+# Pixel Overlays
 PRODUCT_PACKAGES += \
-    ClearCallingOverlay
-endif
+    CompanionDeviceManagerOverlay \
+    DeviceDiagnosticsOverlay \
+    FlipendoOverlay \
+    PixelDisplayService__husky__auto_generated_rro_product \
+    PixelNfcOverlayCommon \
+    SafetyRegulatoryInfoOverlay \
+    SettingsGoogleHuskyOverlay \
+    SettingsGoogleHuskyOverlayRRO \
+    SettingsProviderOverlay \
+    SimAppDialogOverlay \
+    StorageManagerGoogleOverlay \
+    SystemUIGoogleOverlay \
+    TeleServiceOverlay \
+    TelecomOverlay \
+    TelephonyProviderOverlay \
+    TraceurOverlay \
+    TrafficLightFaceOverlay \
+    UdfpsOverlay \
+    SettingsGoogleHuskyOverlayVendorRRO
 
-ifneq ($(filter flame coral redfin oriole raven panther cheetah lynx felix shiba husky akita tokay caiman komodo tegu frankel blazer mustang, $(LINEAGE_BUILD)),)
-PRODUCT_PACKAGES += \
-    DreamlinerOverlay
-endif
